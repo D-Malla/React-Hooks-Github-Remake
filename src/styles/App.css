@@ -28,12 +28,13 @@ html {box-sizing:border-box; font-family: sans-serif;}
 #mainHeader div input {
   background: rgb(63, 68, 72);
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: none;
   height: 25px;
   margin-top: 20px;
   outline: none;
-  width: 250px;
+  padding-left: 10px;
+  width: 300px;
 }
 
 #mainHeader ul {
@@ -47,6 +48,18 @@ html {box-sizing:border-box; font-family: sans-serif;}
   margin: 6px 5px;
 }
 
+#mainHeader ul a {
+  text-decoration: none;
+}
+
+#mainHeader ul li:hover {
+  color: gray;
+}
+
+#mainHeader a {
+  text-decoration: none;
+}
+
 #icons {
   margin-right: 10px;
 }
@@ -57,6 +70,13 @@ html {box-sizing:border-box; font-family: sans-serif;}
   margin: 0px 10px;
   padding-top: 20px;
   width: 20px;
+}
+#icons .optionIcons #firstArrow {
+  margin-left: -14px;
+}
+
+#icons .optionIcons #secondArrow {
+  margin-left: -18px;
 }
 
 #icons .optionIcons .material-icons.md-24 {
@@ -88,10 +108,35 @@ section aside img {
   width: 250px;
 }
 
+section aside div h1{
+  margin-bottom: 0;
+}
+
+section aside div h3 {
+  color: rgb(89, 85, 85);
+  font-weight: lighter;
+  margin-top: 5px;
+}
+
 section aside button {
   border-radius: 5px;
   height: 30px;
   width: 250px;
+}
+
+section aside #asideImage {
+border-bottom: 1px solid lightgray;
+padding-bottom: 20px;
+width: 250px;
+}
+
+section #asideImage button {
+  cursor: pointer;
+}
+
+section #asideImage button:focus, 
+section #asideImage button:visited {
+  outline: none;
 }
 
 #star {
@@ -101,6 +146,7 @@ section aside button {
 .material-icons.md-24 {
   font-size: 16px;
   margin-right: 10px;
+  margin-top: -2px;
 }
 
 section aside #pro {
@@ -114,6 +160,17 @@ section aside #pro {
   padding: 4px 0;
   text-align: center;
   width: 40px;
+}
+
+section aside a {
+  color: rgb(89, 85, 85);
+  font-size: 12px;
+  text-decoration-line: none;
+}
+
+section aside #blockReport:hover {
+  color: blue;
+  text-decoration: none;
 }
 
 main{
@@ -131,8 +188,17 @@ main{
 }
 
 #bodyMenu ul li {
+  color: gray;
   list-style: none;
   margin: 0 15px;
+}
+
+#bodyMenu ul a {
+  text-decoration: none;
+}
+
+#bodyMenu ul li:hover {
+  color: black;
 }
 
 #searchMenu {
@@ -159,6 +225,7 @@ padding-top: 8px;
 #repositoryList {
   border-bottom: .5px solid lightgray;
   display: flex;
+  flex-direction: column;
   height: 100px;
   margin-bottom: 5px;
   justify-content: space-between;
@@ -166,19 +233,42 @@ padding-top: 8px;
 }
 
 #repositoryList h3 {
+  color: rgb(10, 77, 204);
   margin-bottom: -3px;
+  
+}
+
+#repositoryList a {
+  text-decoration: none;
+}
+
+#repositoryList h3:hover {
+  text-decoration:  blue underline;
 }
 
 #aboutRepo {
   display: flex;
 }
 
+#aboutRepo p {
+  color: gray;
+  font-size: 12px;
+  margin-top: 25px;
+  margin-right:10px;
+}
+
 
 #repositoryList button {
   border-radius: 5px;
-  margin-right: 10px;
-  margin-top: 20px;
+  bottom: 70px;
+  cursor: pointer;
+  left: 875px;
+  position: relative;
   width: 70px;
+}
+
+#repositoryList button:focus {
+  outline: none;
 }
 
 /* Footer Styling */
@@ -207,4 +297,14 @@ padding-top: 8px;
   height: 30px;
   margin-top: 10px;
   width: 30px;
+}
+
+#mainFooter .bottomLink{
+  color: blue;
+  text-decoration: none;
+}
+
+#mainFooter .bottomLink:hover {
+  color: blue;
+  text-decoration: underline;
 }
