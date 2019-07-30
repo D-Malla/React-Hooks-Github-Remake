@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import MaterialIcon, {colorPalette} from 'material-icons-react'
 import 'normalize.css/normalize.css'
 import '../styles/App.css'
-import axios from 'axios';
-
+import axios from 'axios'
+import Moment from 'react-moment'
 
 export default function App(props) {
   const [name, setName] = useState('')
@@ -109,7 +109,7 @@ export default function App(props) {
                 <a href='#'><h3>{repo.name}</h3></a>
                 <div id='aboutRepo'>
                   <p>HTML</p>
-          <p>Updated -- days ago</p>
+                  <p>Updated <Moment fromNow>{repo.updated_at}</Moment></p>
                 </div>
               </div>
               <div>
