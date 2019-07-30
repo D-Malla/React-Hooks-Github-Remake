@@ -1,0 +1,210 @@
+html {box-sizing:border-box; font-family: sans-serif;}
+*, *::before, *::after {box-sizing:inherit;}
+
+
+/* Header Styling */
+#mainHeader {
+   background: rgb(36, 41, 46);
+   display: flex;
+   height: 65px;
+   justify-content: space-between;
+
+}
+
+#mainHeader div,
+#mainHeader div ul{
+  display: flex;
+
+}
+
+#mainHeader div img{
+  background: rgb(36, 41, 46);
+  border-radius: 50%;
+  height: 30px;
+  margin: 15px 15px 0 15px;
+  width: 30px;
+}
+
+#mainHeader div input {
+  background: rgb(63, 68, 72);
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  height: 25px;
+  margin-top: 20px;
+  outline: none;
+  width: 250px;
+}
+
+#mainHeader ul {
+  padding-left: 10px;
+}
+
+#mainHeader ul li {
+  color: white;
+  font-size: 15px;
+  list-style: none;
+  margin: 6px 5px;
+}
+
+#icons {
+  margin-right: 10px;
+}
+
+#icons .optionIcons i {
+  color: white;
+  height: 20px;
+  margin: 0px 10px;
+  padding-top: 20px;
+  width: 20px;
+}
+
+#icons .optionIcons .material-icons.md-24 {
+  font-size: 24px;
+}
+
+
+#icons .optionIcons img {
+  border-radius: 3px;
+  height: 20px;
+  margin-top: 22px;
+  margin-right: 15px;
+  width: 20px;
+}
+
+/* Main Content Styling */
+section {
+  display: flex;
+}
+
+section aside {
+  padding: 20px 15px;
+  width: 25%;
+}
+
+section aside img {
+  border-radius: 5px;
+  height: 275px;
+  width: 250px;
+}
+
+section aside button {
+  border-radius: 5px;
+  height: 30px;
+  width: 250px;
+}
+
+#star {
+  display: flex;
+}
+
+.material-icons.md-24 {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+section aside #pro {
+  background: rgb(91, 40, 179); 
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  height: 20px;
+  padding: 4px 0;
+  text-align: center;
+  width: 40px;
+}
+
+main{
+  width: 75%;
+}
+
+#bodyMenu {
+  border-bottom: .5px solid lightgray;
+}
+
+#bodyMenu ul{
+  display: flex;
+  padding: 0;
+  margin: 35px 0 15px 0;
+}
+
+#bodyMenu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+#searchMenu {
+display: flex;
+justify-content: space-evenly;
+height: 50px;
+padding-top: 8px;  
+}
+
+#searchMenu input {
+  border: 1px solid rgb(209, 213, 218);
+  border-radius: 5px;
+  height: 35px;
+  margin-right: 5px;
+  width: 70%;
+}
+
+#searchMenu select {
+  border-radius: 5px;
+  height: 35px;
+  margin: 0 5px;
+}
+
+#repositoryList {
+  border-bottom: .5px solid lightgray;
+  display: flex;
+  height: 100px;
+  margin-bottom: 5px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#repositoryList h3 {
+  margin-bottom: -3px;
+}
+
+#aboutRepo {
+  display: flex;
+}
+
+
+#repositoryList button {
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 20px;
+  width: 70px;
+}
+
+/* Footer Styling */
+#mainFooter {
+  border-top: .5px solid lightgray;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 70%;
+}
+
+#mainFooter ul {
+  display: flex;
+  padding: 0;
+}
+
+#mainFooter ul li {
+  list-style: none;
+  margin: 0 5px;  
+}
+
+#mainFooter div img {
+  border-radius: 50%;
+  height: 30px;
+  margin-top: 10px;
+  width: 30px;
+}
